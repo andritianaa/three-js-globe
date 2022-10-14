@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VRM World</title>
+    <meta name="description" content="VRM global Map">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="assets/css-generated/style_extended.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJ6KTZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJ6KTZ');</script>
+    <!-- End Google Tag Manager -->
+    <div id="wrapper">
+        <!--[if lt IE 10]>
+              <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+        <!--Globe-->
+        <div id="globe"></div>
+
+        <!--Logo-->
+
+
+        <!--Zoom button-->
+        <a href="#" id="close-zoom" class="hidden"><i class="icon icon--zoom"></i>Zoom out</a>
+
+        <!--Search component-->
+        <div class="search">
+
+            <!--Open search-->
+            <a class="search__show is-visible js-search-show" href="#"><i class="search__icon icon icon--search"></i>Search</a>
+
+            <!--Sliding search-->
+            <div class="search__inner js-search">
+                <!--Close search-->
+                <a href="#" class="js-search-close search__icon search__close icon icon--close"></a>
+                <form class="search__form">
+                    <i class="search__icon icon icon--search"></i>
+                    <input type="search" class="js-filter-list" placeholder="Search"
+                        autocomplete="off" />
+                </form>
+
+                <ul class="search__list js-filter js-flex-height">
+                    <li>
+                        <h2 class="search__header"><i class="search__icon icon icon--marker"></i><span
+                                class="js-filter-num-installations">All</span> installation<span
+                                class="js-filter-multi">s</span></h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Popup-->
+        <div class="popup hidden">
+            <div class="popup__header">
+                <a class="popup__header__link" href="http://www.victronenergy.com/" target="_blank">visit<i
+                        class="fa fa-angle-right"></i></a>
+                <span class="popup__header__name">Installation name</span>
+            </div>
+            <div class="popup__body">
+                <div class="popup__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus doloribus ullam, culpa iste eum facere? Fugit, maxime, ad nesciunt dignissimos debitis quia iste at maiores laudantium praesentium iure? Quasi, ea.
+                </div>
+            </div>
+            <div class="popup__arrow_down"></div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="assets/js-generated/scripts.js" type="text/javascript"></script>
+</body>
+
+</html>
