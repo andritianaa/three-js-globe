@@ -156,13 +156,10 @@ function animate_tooltip() {
                     n.addClass(r)
             })
 }
-function get_percentage(e, t, r) {
-    var t = Number(t); return 100 * ((Number(e) - t) / (Number(r) - t))
-}
 
 function load_tooltip(e) {
     $(".popup__header__name").text(e.name)
-    $(".popup__description").text(e.description)
+    $(".popup_description").text(e.description)
     
 }
 function filterSearch() {
