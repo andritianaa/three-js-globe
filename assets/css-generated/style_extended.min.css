@@ -9643,15 +9643,19 @@ body {
     width: fit-content;
     top: 50%;
     left: 50%;
-    z-index: 6;
+    z-index: 100;
     transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: ease all .5s;
 }
 #loading p{
     font-weight: bold;
     color: white
 }
 #loading.hide{
-    display:none !important;
+    top:150vh;
+    opacity: .2;
+    display: block !important;
 }
 
 
@@ -9720,23 +9724,4 @@ body {
         transform: translate(24px, 0);
       }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
