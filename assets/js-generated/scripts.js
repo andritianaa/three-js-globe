@@ -121,9 +121,10 @@ function start() {
     animate())
 }
 function getSites(e) {
+    var loading = document.getElementById('loading')
+    loading.classList.add('hide')
     $.get(API_URL, function (t) {
         var r = [];
-        console.log(t);
         let temp;
         for (var n in t){
             temp = {
